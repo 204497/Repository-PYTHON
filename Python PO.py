@@ -3,8 +3,65 @@ import time
 
 
 # Lijsten
-VijfLetterWoorden = [
-    "acces","acryl", "addax", "affix", "aftyp", "ampex", "axels", "babys", "baggy", "batch",
+VijfletterWoorden = [
+    "aarde","adres","afwas","alert","armen","appel","avond","beker",
+    "bomen","brood","daken","dicht","draag","droom","fiets",
+    "fonds","grond","groen","geven","ikoon",
+    "jaren","jacht","kader","kamer","koken","kruis","kleur","laden",
+    "lopen","licht","mazel","mosje","nieuw","noten","egels","offer",
+    "paden","piano","prijs","quota","rozen","rusty","samen","zeker",
+    "steen","stoel","tafel","titel","dadel","vader","vaant","varen",
+    "velen","speld","vogel","vrede","water","wegen","weren","wezen",
+    "weten","wonen","woord","wraak","zaais","zaken","zomer","weken",
+    "katje","bazen","zonet","zwaar","zetel","zelfs","zwier","zweet",
+    "zwijn","diner","graag","klopt","gaten","spaak","talen","begin",
+    "einde","igloo","joker","lente","motor","roert","porno","quilt",
+    "reken","takel","vrouw","xenon","yacht","zebra","breed","smaak",
+    "prijs","klank","gilde","hobby","licht","rolde","snoep","sport",
+    "tempo","vloer","waarde","zorgt","drank","veter","force","groot",
+    "harde","inter","joden","koers","licht","markt","noten","order",
+    "polem","quasi","reden","sigma","tekst","vormt","datum","yodel",
+    "zeven","ziggo","akter","baken","cello","draag"
+]
+
+ZesLetterWoorden = [
+    "kamers","tafels","bekers","borden","messen","vorken","pannen","deuren",
+    "raming","huizen","tuinen","straks","morgen","gister","winter","zomers",
+    "herfst","lentes","wolken","regens","stormt","zonnen","manier","dingen",
+    "werken","school","leraar","lessen","boeken","schijf","papier","pennen",
+    "straat","wegens","brugje","havens","kusten","eiland","velden","bossen",
+    "dieren","vogels","paards","koeien","geiten","vissen","honden","katten",
+    "muizen","ratten","lampen","wekker","bedden","kussen","dekens","lakens",
+    "kleden","banken","tegels","zolder","kelder","treden","gangen","dakpan",
+    "regent","sneeuw","ijsjes","koelen","kookte","bakken","braden","stoven",
+    "snijdt","menger","mixers","suiker","zoutje","pepers","bitter","zoetje",
+    "zuivel","kaasje","bieren","wijnen","glazen","kopjes","kommen","schort",
+    "jassen","truien","shirts","sokken","petten","mutsen","riemen","knopen",
+    "tassen","fietst","autoos","metros","bussen","taxies","bootje","vracht",
+    "lading","ankers","roeien","vlucht","landen","stijgt","daalde","hoogte",
+    "laagte","smalle","diktes","lichte","donker","helder","zachte","harder"
+]
+
+Zevenletterwoorden = [
+    "aanblik", "afzeven", "versjes", "beetjes", "baantje", "bedreig", "vliegen", "behagen",
+    "belegen", "bemeten", "benauwd", "beramen", "bericht", "bezoeke", "bijtend", "bittert",
+    "blaffen", "blijven", "bloemen", "boeiend", "zangers", "brandig", "breuken", "broeden",
+    "bruinen", "buiteno", "centaal", "daguren", "bakkers", "lederen", "deeltje", "deugden",
+    "doorzen", "draaien", "droogte", "duikers", "vogelen", "legerig", "eindige", "elektra",
+    "slinger", "emoties", "eventje", "exactie", "vlaggen", "familie", "faseren", "feestje",
+    "fietser", "gebluft", "kontjes", "gegeven", "gehoord", "slijten", "gekruid", "gelders",
+    "gemeten", "genaamd", "geschat", "geboeid", "getuigd", "gedruis", "gierend", "glanzen",
+    "beekjes", "grondje", "grauwen", "groeien", "grondig", "gummend", "haalden", "handvat",
+    "herdenk", "herleef", "hoogten", "botelen", "politie", "kunstig", "inzicht", "beukers",
+    "jubelen", "kabelen", "kaarsen", "kansvol", "formule", "katerns", "keurend", "kleuren",
+    "klimmen", "knippen", "koersen", "mensjes", "scholen", "krenter", "kunsten", "kwekers",
+    "laatste", "schelde", "leugens", "liefheb", "logisch", "loutere", "luchtje", "luieren",
+    "maandje", "machtig", "maiskol", "mamamia", "metalen", "vijvers", "mammoet", "kleuter",
+    "emailen", "popcorn", "lepelen", "poepzak", "ochtend", "diamant", "organen", "overdag"
+]
+
+moeilijker_VijfLetterWoorden = [
+    "acces", "acryl", "addax", "affix", "aftyp", "ampex", "axels", "babys", "baggy", "batch",
     "bobby", "buggy", "buddy", "buxus", "bitch", "blijf", "bodys", "bogey", "bytes", "check",
     "chick", "click", "cocci", "curry", "cycli", "dizzy", "derby", "dummy", "dicht", "dwaze",
     "epoxy", "enzym", "ethyl", "exact", "essay", "extra", "happy", "hobby", "husky", "hyper",
@@ -17,8 +74,10 @@ VijfLetterWoorden = [
     "chimp", "dacht", "dandy", "derny", "detox", "docht", "dwars", "epiek"
 ]
 
-ZesLetterWoorden =  [
-    "acquit","afwijk","afzwak","afzwem","afzwoom","accept","afkick","afwijs","abject","achtje",
+#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
+
+moeilijker_ZesLetterWoorden =  [
+    "acquit","afwijk","afzwak","afzwem","afzwom","accept","afkick","afwijs","abject","achtje",
     "afbijt","afbouw","affect","byebye","bobbys","buggys","bakmix","boycot","brique","bypass",
     "bluesy","boxjes","buddys","byssus","backup","catchy","cyclus","chique","cowboy","cheque",
     "clique","cyborg","cynici","calque","cervix","claque","climax","crypte","cypers","chicks",
@@ -32,7 +91,9 @@ ZesLetterWoorden =  [
     "klysma","kwikwi","klucht","kwijlt","kippig","kirsch","kitsch","klacht","krucht","kwezel"
 ]
 
-ZevenLetterWoorden  = [
+#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
+
+moeilijker_ZevenLetterWoorden  = [
     "Acquits", "Acrogym", "Afschuw", "Afzicht", "Afblijf", "Afwacht", "Afwrijf", "Afzocht",
     "Aquavit", "Aquifer", "Accubak", "Affiche", "Affixen", "Afhecht", "Aflicht", "Afschaf",
     "Babybox", "Babypop", "Boxcalf", "Babybus", "Bijwijf", "Babybad", "Babybed", "Babybos",
@@ -48,14 +109,17 @@ ZevenLetterWoorden  = [
     "Inzicht", "Ijswijn", "Jacquet", "Jacuzzi", "Jockeys", "Jukebox", "Jurylid", "Jachtig"
 ]
 
+#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
+
 MaxPogingen = 6
-hint_gebruikt = False
+
 
 # Begin
 print("Welkom bij Lingo!!\n")
 
 # Spelernaam
 naamspeler = input("Wat is de naam van uw speler? ").strip()
+# ChatGPT 13-2-2026 - Gebruikt voor '.strip()'
 while not naamspeler:
     print("Uw spelersnaam is niet opgeslagen, probeer het opnieuw.")
     naamspeler = input("Wat is de naam van uw speler? ").strip()
@@ -64,7 +128,9 @@ print(f"Uw spelersnaam is opgeslagen: {naamspeler}\n")
 
 # Spelregels
 Spelregels = input("Wilt u de spelregels weten? (Ja/Nee) ").strip().lower()
+# ChatGPT 13-2-2026 - Gebruikt voor '.lower()'
 while not (Spelregels.startswith("ja") or Spelregels.startswith("nee")):
+# ChatGPT 13-2-2026 - Gebruikt voor 'startswith()'
     Spelregels = input("Typ ja of nee: ").strip().lower()
 
 if Spelregels.startswith("ja"):
@@ -73,7 +139,6 @@ if Spelregels.startswith("ja"):
     print("Als u een letter goed raadt, kleurt het hokje groen 🟩,")
     print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje geel 🟨,")
     print("en als de letter niet goed is blijft het hokje wit ⬜.\n")
-    print("typ 'hin' om de eerste letter te ")
 else:
     print("Succes!\n")
 
@@ -100,13 +165,15 @@ print("\nOke. We gaan beginnen!\n")
 
 # Woord kiezen
 if LengteWoord in ("5", "vijf", "vijfletterwoord"):
-    geheim_woord = random.choice(VijfLetterWoorden)
+    geheim_woord = random.choice(VijfletterWoorden)
+    # ChatGPT - Gebruikt voor 'random.choice'
 elif LengteWoord in ("6", "zes", "zesletterwoord"):
     geheim_woord = random.choice(ZesLetterWoorden)
 else:
-    geheim_woord = random.choice(ZevenLetterWoorden)
+    geheim_woord = random.choice(Zevenletterwoorden)
 
 ALetter = len(geheim_woord)
+# ChatGPT - Gebruikt voor 'len'
 print("Uw woord is gekozen.\n")
 
 start_time = time.time()
@@ -116,15 +183,6 @@ geraden = False
 
 while pogingen > 0 and not geraden:
     raden = input("Probeert u eens: ").strip().lower()
-
-#hintsysteem
-    if raden == "hint" and not hint_gebruikt:
-        print("hint: De eerste letter is:", geheim_woord[0])
-        hint_gebruikt = True
-        continue
-    elif raden == "hint" and hint_gebruikt:
-        print("U heeft uw hint al gebruikt!\n")
-        continue
 
     # Lengte controleren
     if len(raden) != ALetter:
@@ -145,7 +203,8 @@ while pogingen > 0 and not geraden:
             index = geheim_list.index(raden[i])
             geheim_list[index] = None
 
-    print("Resultaat:", "".join(feedback), "\n")
+    print("Resultaat:", " ".join(feedback), "\n")
+    # ChatGPT - Gebruikt voor '.join()'
 
     if raden == geheim_woord:
         geraden = True
@@ -181,11 +240,11 @@ while LevelConfirmatie.lower().startswith("ja"):
     print("\nOke. We gaan beginnen!\n")
 
     if LengteWoord in ("5", "vijf", "vijfletterwoord"):
-        geheim_woord = random.choice(VijfLetterWoorden)
+        geheim_woord = random.choice(moeilijker_VijfLetterWoorden)
     elif LengteWoord in ("6", "zes", "zesletterwoord"):
-        geheim_woord = random.choice(ZesLetterWoorden)
+        geheim_woord = random.choice(moeilijker_ZesLetterWoorden)
     else:
-        geheim_woord = random.choice(ZevenLetterWoorden)
+        geheim_woord = random.choice(moeilijker_ZevenLetterWoorden)
 
     ALetter = len(geheim_woord)
     print("Uw woord is gekozen.\n")
@@ -238,6 +297,6 @@ if LevelConfirmatie.lower().startswith("nee"):
 end_time = time.time()
 totale_tijd = round(end_time - start_time, 1)
 
-print("u deed er", totale_tijd, "seconden over")
+print("U deed er", totale_tijd, "seconden over.")     
    
-# Einde
+# Einde :)
