@@ -147,7 +147,6 @@ if not geraden:
 LevelConfirmatie = input("Wilt uw een moeilijkere level spelen? ")
 
 while LevelConfirmatie.lower().startswith("ja"):
-
     LengteWoord = input("Wilt u een vijfletterwoord, zesletterwoord of zevenletterwoord proberen te raden? (5/vijf, 6/zes, 7/zeven) ").strip().lower()
 
     while LengteWoord not in ("5", "vijf", "vijfletterwoord",
@@ -203,7 +202,7 @@ while LevelConfirmatie.lower().startswith("ja"):
                 index = geheim_list.index(raden[i])
                 geheim_list[index] = None
 
-        print("Resultaat:", "".join(feedback), "\n")
+        print("Resultaat:", " ".join(feedback), "\n")
         
         if raden == geheim_woord:
             geraden = True
@@ -217,4 +216,9 @@ while LevelConfirmatie.lower().startswith("ja"):
         print("Het woord was:", geheim_woord)
 
     LevelConfirmatie = input("Wilt u nog een level spelen? ")
+    
+if LevelConfirmatie.lower().startswith("nee"):
+    print("\n")
+    print("Einde spel, dankuwel voor het spelen.")
+    
 
