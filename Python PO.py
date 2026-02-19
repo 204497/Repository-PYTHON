@@ -17,8 +17,6 @@ VijfLetterWoorden = [
     "chimp", "dacht", "dandy", "derny", "detox", "docht", "dwars", "epiek"
 ]
 
-#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
-
 ZesLetterWoorden =  [
     "acquit","afwijk","afzwak","afzwem","afzwoom","accept","afkick","afwijs","abject","achtje",
     "afbijt","afbouw","affect","byebye","bobbys","buggys","bakmix","boycot","brique","bypass",
@@ -33,8 +31,6 @@ ZesLetterWoorden =  [
     "jockey","juicht","jersey","jezelf","jaszak","jippie","jochie","juffer","juffie","jujube",
     "klysma","kwikwi","klucht","kwijlt","kippig","kirsch","kitsch","klacht","krucht","kwezel"
 ]
-
-#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
 
 ZevenLetterWoorden  = [
     "Acquits", "Acrogym", "Afschuw", "Afzicht", "Afblijf", "Afwacht", "Afwrijf", "Afzocht",
@@ -52,17 +48,14 @@ ZevenLetterWoorden  = [
     "Inzicht", "Ijswijn", "Jacquet", "Jacuzzi", "Jockeys", "Jukebox", "Jurylid", "Jachtig"
 ]
 
-#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
-
 MaxPogingen = 6
-
+hint_gebruikt = False
 
 # Begin
 print("Welkom bij Lingo!!\n")
 
 # Spelernaam
 naamspeler = input("Wat is de naam van uw speler? ").strip()
-# ChatGPT 13-2-2026 - Gebruikt voor '.strip()'
 while not naamspeler:
     print("Uw spelersnaam is niet opgeslagen, probeer het opnieuw.")
     naamspeler = input("Wat is de naam van uw speler? ").strip()
@@ -71,9 +64,7 @@ print(f"Uw spelersnaam is opgeslagen: {naamspeler}\n")
 
 # Spelregels
 Spelregels = input("Wilt u de spelregels weten? (Ja/Nee) ").strip().lower()
-# ChatGPT 13-2-2026 - Gebruikt voor '.lower()'
 while not (Spelregels.startswith("ja") or Spelregels.startswith("nee")):
-# ChatGPT 13-2-2026 - Gebruikt voor 'startswith()'
     Spelregels = input("Typ ja of nee: ").strip().lower()
 
 if Spelregels.startswith("ja"):
@@ -82,6 +73,7 @@ if Spelregels.startswith("ja"):
     print("Als u een letter goed raadt, kleurt het hokje groen 🟩,")
     print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje geel 🟨,")
     print("en als de letter niet goed is blijft het hokje wit ⬜.\n")
+    print("typ 'hin' om de eerste letter te ")
 else:
     print("Succes!\n")
 
@@ -109,14 +101,12 @@ print("\nOke. We gaan beginnen!\n")
 # Woord kiezen
 if LengteWoord in ("5", "vijf", "vijfletterwoord"):
     geheim_woord = random.choice(VijfLetterWoorden)
-    # ChatGPT - Gebruikt voor 'random.choice'
 elif LengteWoord in ("6", "zes", "zesletterwoord"):
     geheim_woord = random.choice(ZesLetterWoorden)
 else:
     geheim_woord = random.choice(ZevenLetterWoorden)
 
 ALetter = len(geheim_woord)
-# ChatGPT - Gebruikt voor 'len'
 print("Uw woord is gekozen.\n")
 
 start_time = time.time()
@@ -126,6 +116,15 @@ geraden = False
 
 while pogingen > 0 and not geraden:
     raden = input("Probeert u eens: ").strip().lower()
+
+#hintsysteem
+    if raden == "hint" and not hint_gebruikt:
+        print("hint: De eerste letter is:", geheim_woord[0])
+        hint_gebruikt = True
+        continue
+    elif raden == "hint" and hint_gebruikt:
+        print("U heeft uw hint al gebruikt!\n")
+        continue
 
     # Lengte controleren
     if len(raden) != ALetter:
@@ -146,8 +145,7 @@ while pogingen > 0 and not geraden:
             index = geheim_list.index(raden[i])
             geheim_list[index] = None
 
-    print("Resultaat:", " ".join(feedback), "\n")
-    # ChatGPT - Gebruikt voor '.join()'
+    print("Resultaat:", "".join(feedback), "\n")
 
     if raden == geheim_woord:
         geraden = True
@@ -242,5 +240,4 @@ totale_tijd = round(end_time - start_time, 1)
 
 print("u deed er", totale_tijd, "seconden over")
    
-# Einde :)
-   
+# Einde
