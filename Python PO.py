@@ -76,7 +76,6 @@ else:
 # Woordlengte kiezen
 LengteWoord = input("Wilt u een vijfletterwoord, zesletterwoord of zevenletterwoord proberen te raden? (5/vijf, 6/zes, 7/zeven) ").strip().lower()
 
-# Blijft vragen tot geldige invoer
 while LengteWoord not in ("5", "vijf", "vijfletterwoord",
                           "6", "zes", "zesletterwoord",
                           "7", "zeven", "zevenletterwoord"):
@@ -134,7 +133,6 @@ while pogingen > 0 and not geraden:
 
     print("Resultaat:", "".join(feedback), "\n")
 
-    # Controleren of het woord geraden is
     if raden == geheim_woord:
         geraden = True
         print(f"Geweldig, {naamspeler}! U heeft het woord geraden!")
@@ -146,20 +144,17 @@ if not geraden:
     print(f"Helaas, {naamspeler}, u heeft verloren.")
     print("Het woord was:", geheim_woord)
 
-# --------- MINIMALE FIX VOOR ONEINDIGE LOOP ----------
 LevelConfirmatie = input("Wilt uw een moeilijkere level spelen? ")
 
 while LevelConfirmatie.lower().startswith("ja"):
 
     LengteWoord = input("Wilt u een vijfletterwoord, zesletterwoord of zevenletterwoord proberen te raden? (5/vijf, 6/zes, 7/zeven) ").strip().lower()
 
-    # Blijft vragen tot geldige invoer
     while LengteWoord not in ("5", "vijf", "vijfletterwoord",
                               "6", "zes", "zesletterwoord",
                               "7", "zeven", "zevenletterwoord"):
         LengteWoord = input("Ongeldige keuze. Kies 5/vijf, 6/zes of 7/zeven: ").strip().lower()
 
-    # Bevestiging
     Confirmatie = input("Weet u dit zeker? (Ja/Nee) ").strip().lower()
     while Confirmatie != "ja":
         if Confirmatie == "nee":
@@ -172,7 +167,6 @@ while LevelConfirmatie.lower().startswith("ja"):
 
     print("\nOke. We gaan beginnen!\n")
 
-    # Woord kiezen
     if LengteWoord in ("5", "vijf", "vijfletterwoord"):
         geheim_woord = random.choice(VijfLetterWoorden)
     elif LengteWoord in ("6", "zes", "zesletterwoord"):
@@ -183,14 +177,14 @@ while LevelConfirmatie.lower().startswith("ja"):
     ALetter = len(geheim_woord)
     print("Uw woord is gekozen.\n")
 
-    # Spel
+    
     pogingen = MaxPogingen
     geraden = False
 
     while pogingen > 0 and not geraden:
         raden = input("Probeert u eens: ").strip().lower()
 
-        # Lengte controleren
+        
         if len(raden) != ALetter:
             print(f"Uw woord moet {ALetter} letters hebben.\n")
             continue
@@ -210,8 +204,7 @@ while LevelConfirmatie.lower().startswith("ja"):
                 geheim_list[index] = None
 
         print("Resultaat:", "".join(feedback), "\n")
-
-        # Controleren of het woord geraden is
+        
         if raden == geheim_woord:
             geraden = True
             print(f"Geweldig, {naamspeler}! U heeft het woord geraden!")
@@ -223,6 +216,5 @@ while LevelConfirmatie.lower().startswith("ja"):
         print(f"Helaas, {naamspeler}, u heeft verloren.")
         print("Het woord was:", geheim_woord)
 
-    # ---- CRUCIALE FIX ----
     LevelConfirmatie = input("Wilt u nog een level spelen? ")
 
