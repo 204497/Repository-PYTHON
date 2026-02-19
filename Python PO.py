@@ -67,9 +67,9 @@ while not (Spelregels.startswith("ja") or Spelregels.startswith("nee")):
 if Spelregels.startswith("ja"):
     print("\nHet doel van het spel is om een vijfletter-, zesletter- of zevenletterwoord te raden door middel van andere woorden.")
     print("U heeft 6 pogingen om dit te doen.")
-    print("Als u een letter goed raadt, kleurt het hokje groen 🟩,")
-    print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje geel 🟨,")
-    print("en als de letter niet goed is blijft het hokje wit ⬜.\n")
+    print("Als u een letter goed raadt, kleurt het hokje wit 🟩,")
+    print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje grijs 🟨,")
+    print("en als de letter niet goed is blijft het hokje zwart ⬜.\n")
 else:
     print("Succes!\n")
 
