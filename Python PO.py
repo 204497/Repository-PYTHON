@@ -221,4 +221,6 @@ if LevelConfirmatie.lower().startswith("nee"):
     print("\n")
     print("Einde spel, dankuwel voor het spelen.")
     
+# Einde
+    
 
