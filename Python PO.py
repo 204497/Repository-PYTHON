@@ -1,8 +1,10 @@
 import random
+import time
+
 
 # Lijsten
 VijfLetterWoorden = [
-    "acces", "acryl", "addax", "affix", "aftyp", "ampex", "axels", "babys", "baggy", "batch",
+    "acces","acryl", "addax", "affix", "aftyp", "ampex", "axels", "babys", "baggy", "batch",
     "bobby", "buggy", "buddy", "buxus", "bitch", "blijf", "bodys", "bogey", "bytes", "check",
     "chick", "click", "cocci", "curry", "cycli", "dizzy", "derby", "dummy", "dicht", "dwaze",
     "epoxy", "enzym", "ethyl", "exact", "essay", "extra", "happy", "hobby", "husky", "hyper",
@@ -48,6 +50,7 @@ ZevenLetterWoorden  = [
 
 MaxPogingen = 6
 
+
 # Begin
 print("Welkom bij Lingo!!\n")
 
@@ -67,9 +70,9 @@ while not (Spelregels.startswith("ja") or Spelregels.startswith("nee")):
 if Spelregels.startswith("ja"):
     print("\nHet doel van het spel is om een vijfletter-, zesletter- of zevenletterwoord te raden door middel van andere woorden.")
     print("U heeft 6 pogingen om dit te doen.")
-    print("Als u een letter goed raadt, kleurt het hokje wit 🟩,")
-    print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje grijs 🟨,")
-    print("en als de letter niet goed is blijft het hokje zwart ⬜.\n")
+    print("Als u een letter goed raadt, kleurt het hokje groen 🟩,")
+    print("als de letter in het woord zit maar niet op de juiste plek dan kleurt het hokje geel 🟨,")
+    print("en als de letter niet goed is blijft het hokje wit ⬜.\n")
 else:
     print("Succes!\n")
 
@@ -105,6 +108,7 @@ else:
 ALetter = len(geheim_woord)
 print("Uw woord is gekozen.\n")
 
+start_time = time.time()
 # Spel
 pogingen = MaxPogingen
 geraden = False
@@ -176,14 +180,14 @@ while LevelConfirmatie.lower().startswith("ja"):
     ALetter = len(geheim_woord)
     print("Uw woord is gekozen.\n")
 
-    
+   
     pogingen = MaxPogingen
     geraden = False
 
     while pogingen > 0 and not geraden:
         raden = input("Probeert u eens: ").strip().lower()
 
-        
+       
         if len(raden) != ALetter:
             print(f"Uw woord moet {ALetter} letters hebben.\n")
             continue
@@ -203,7 +207,7 @@ while LevelConfirmatie.lower().startswith("ja"):
                 geheim_list[index] = None
 
         print("Resultaat:", " ".join(feedback), "\n")
-        
+       
         if raden == geheim_woord:
             geraden = True
             print(f"Geweldig, {naamspeler}! U heeft het woord geraden!")
@@ -216,11 +220,15 @@ while LevelConfirmatie.lower().startswith("ja"):
         print("Het woord was:", geheim_woord)
 
     LevelConfirmatie = input("Wilt u nog een level spelen? ")
-    
+   
 if LevelConfirmatie.lower().startswith("nee"):
     print("\n")
     print("Einde spel, dankuwel voor het spelen.")
-    
-# Einde
-    
+   
+end_time = time.time()
+totale_tijd = round(end_time - start_time, 1)
 
+print("u deed er", totale_tijd, "seconden over")
+   
+# Einde
+   
