@@ -109,13 +109,15 @@ moeilijker_ZevenLetterWoorden  = [
     "Inzicht", "Ijswijn", "Jacquet", "Jacuzzi", "Jockeys", "Jukebox", "Jurylid", "Jachtig"
 ]
 
-#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren.
+#ChatGPT 17-2-2026 - Gebruikt om de woorden in de lijsten te genereren..
 
 MaxPogingen = 6
 
 
 # Begin
-print("Welkom bij Lingo!!\n")
+def begin(): 
+    print("Welkom bij Lingo!!\n")
+begin()
 
 # Spelernaam
 naamspeler = input("Wat is de naam van uw speler? ").strip()
@@ -297,6 +299,6 @@ if LevelConfirmatie.lower().startswith("nee"):
 end_time = time.time()
 totale_tijd = round(end_time - start_time, 1)
 
-print(f"U deed er, {totale_tijd}, seconden over.")    
+print(f"U deed er, {totale_tijd}, seconden over.")
    
 # Einde :)
