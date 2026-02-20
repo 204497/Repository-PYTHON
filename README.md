@@ -28,3 +28,19 @@ Wat ik anders zou doen bij een volgend project is meer uitdaging zoeken.
 
 # Fynn:
 
+Ik heb veel geleerd. Om te beginnen heb ik geleerd hoe ik vooral mijn code overzichtelijker maak met een while-loop. Bij bijvoorbeeld het fietsenprobleem was mijn code erg onoverzichtelijk wat er ook voor zorgde dat ik veel in de problemen kwam en niet meer wist waar de fout zat. Ook heb ik geleerd om de input functie goed te gebruiken. Een groot deel van ons spel en onze code is input. Input gebruik je om advies oftewel ‘input’ van de gebruiker te vragen. Waar ik nog steeds veel problemen mee heb is het gebruiken van github. Het git-push en git-pull. Daarom hebben we steeds wanneer ik dan code heb aangepast en klaar was, de code gemaild naar Sam die dan de code toevoegde aan github met commands. 
+
+Dit zorgde wel ervoor dat het veranderen van het bestand veel langer duurde omdat ik steeds op Sam moest rekenen om via github de code toe te voegen. Dit zorgde wel dat de samenwerking erg moeilijk liep omdat wij volledig van elkaar afhankelijk waren en doordat wij een erg verschillend schema hebben met na-school activiteiten we beiden erg gefrustreerd werden maar uiteindelijk kwamen we er samen goed uit.  
+
+Wij hadden niet echt taken verdeeld. We zijn er samen aan gaan werken en proberen nieuwe uitbreidingen toe te voegen om de code te verbeteren. Doordat wij niet hadden afgesproken wie wat doet hadden we wel vaker het probleem dat we hetzelfde hadden veranderd en dat dus één persoon voor niks had gewerkt. Na een paar keer in de knoop raken besloten we toch ieder een eigen taak te doen waardoor we veel sneller vooruit kwamen. Hierdoor ging ons project in de laatste week ook veel sneller vooruit dan in de weken ervoor. Wat goed ging is het uitbreiden. We kwamen beide steeds met betere ideeën om de code nog te verbeteren wat ook voor meer motivatie zorgde om aan het project te werken.  
+
+De reden dat we dit onderwerp hadden gekozen was omdat het één van Sam’s lievelingsspellen is, ik had er nog nooit van gehoord wat ook leuk was voor mij. Ook is het maken niet erg ingewikkeld. Sam heeft Lingo veel gespeeld toen hij klein was wat ook voor veel nostalgie zorgde aan Sam zijn kant en een mogelijkheid voor mij om weer meer Nederlandse cultuur te leren kennen.  
+
+Belangrijk ontwerpkeuze die wij gemaakt hebben is het woorden kiezen. In ons Lingo spel heb je verschillende levels. Een makkelijker level en een moeilijker level. We waren het niet eens met elkaar over hoeveel woorden we wouden gebruiken om een balans tussen ‘goed te raden’ en ‘goed nadenken’ en dus hebben we besloten om 120 woorden bij elke lijst te gebruiken.  
+
+Mijn eigen inzet had wel meer gemoeten naar mijn mening. Ik was erg druk met leren voor een inhaaltoets en wel nog tijd hebben voor al mijn andere hobby’s. Daardoor was Sam vaak meer aan het doen terwijl ik andere vakken aan het leren was. Ik had Sam wel vaker mogen helpen vooral omdat hij ook andere dingen aan zijn hoofd had. Dus ik heb wel goed meegewerkt maar mijn inzet thuis had zeker wel omhoog gemogen.  
+
+Trots ben ik op mijzelf om toch als mijn schoolproject voor de vakantie te hebben kunnen afgerond en allemaal ook zeker goed in orde. Ik had veel projecten die ik allemaal af moest hebben en ook allemaal voor een cijfer waren en ik heb elk project goed afgerond om met een goed gevoel in de vakantie te gaan  
+
+Ik zou een betere planning maken zodat ieder lid van het groepje weet wat hij / zij moet gaan doen. Ook zou ik zorgen dat ieder weet hoe zij samen het document kunnen veranderen zodat je niet erg afhankelijk van de andere persoon bent. En zorgen dat ieder ook thuis wat kan doen om te zorgen dat het in de agenda van die personen past.  
+
