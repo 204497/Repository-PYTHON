@@ -297,6 +297,6 @@ if LevelConfirmatie.lower().startswith("nee"):
 end_time = time.time()
 totale_tijd = round(end_time - start_time, 1)
 
-print("U deed er", totale_tijd, "seconden over.")     
+print(f"U deed er, {totale_tijd}, seconden over.")    
    
 # Einde :)
